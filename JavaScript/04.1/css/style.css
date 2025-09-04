@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.default{
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.button{
+    padding: 1rem;
+    margin: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(49, 162, 199);
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.button:hover{
+    background-color: rgb(26, 115, 137);
+    color: white;
+}
