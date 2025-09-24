@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>perfil</title>
-</head>
-<body>
+<%- include('partials/header.ejs') %>
     <%# isso é um comentario no EJS %>
     
     <p>Bem vindo(a) <%= user %> ao seu perfil</p>
     <li><a href="/">Home</a></li>
-</body>
-</html> 
+<%- include('partials/footer.ejs') %>

@@ -52,9 +52,10 @@ app.get("/clientes", (req, res) => {
 });
 
 // ROTA DE PERFIS
-app.get("/perfil", (req, res) => {
-  //criando a variavel que sera enviada para a pagina perfil.ejs
-  const user = "Guilherme Bitencourt";
+ // :user -> parametro de rota (OBRIGATÓRIO)
+ // :user? -> parametro de rota (OPCIONAL)
+app.get("/perfil/:user", (req, res) => {
+  const user = req.params.user
   //enviando a variavel user para a pagina perfil.ejs
   res.render("perfil",{
     user: user
